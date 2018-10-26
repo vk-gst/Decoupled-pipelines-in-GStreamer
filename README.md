@@ -45,4 +45,8 @@ and same scenario, the element `autovideosink` will display a black window and t
 available again at  `udpsrc`.
 
 
+The same concept can be applied to a pipeline, that consists of multiple sources like network ports, file sources, live camera sources
+and the data needs to be muxed/decoded and sent to different sink elements. This would help in some parts of pipeline still working, 
+even though one of the sources gets stalled which occurs more often in live sources. 
+
 
